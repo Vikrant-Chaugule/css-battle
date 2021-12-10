@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ups n Down</title>
+    <style>
+        body {
+            background: #62306D;
+            display: flex;
+            justify-content: center;
+            align-items: center
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+            margin-top: 100px;
+        }
+
+        #b1,
+        #b2,
+        #b3 {
+            background: #F7EC7D
+        }
+
+        #b1 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border-radius: 50px 50px 0px 0px
+        }
+
+        #b2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            border-radius: 0px 0px 50px 50px
+        }
+
+        #b3 {
+            grid-column: 3/4;
+            grid-row: 2/3;
+            border-radius: 0px 0px 50px 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div id="b1"></div>
+        <div id="b2"></div>
+        <div id="b3"></div>
+    </div>
+</body>
+
+</html>
