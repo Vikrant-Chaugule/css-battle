@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Button</title>
+</head>
+
+<body>
+    <div class="container center">
+        <div id="box1"></div>
+
+        <div id="invisible" class="center circle">
+            <div id="box2" class="center circle">
+                <div id="box3" class="circle"></div>
+            </div>
+        </div>
+
+        <div id="box4"></div>
+
+    </div>
+    <style>
+        body {
+            background: #6592CF;
+        }
+
+        body,
+        .center,
+        background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .container {
+            background: white;
+            height: 150px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+        }
+
+        #box1 {
+            height: 150px;
+            width: 50px;
+            background: #243D83;
+        }
+
+        #invisible {
+            background: #6592CF;
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            left: 643px;
+        }
+
+        #box2 {
+            background: #243D83;
+            height: 150px;
+            width: 150px;
+        }
+
+        #box3 {
+            background: #EEB850;
+            height: 50px;
+            width: 50px;
+        }
+
+        #box4 {
+            height: 150px;
+            width: 50px;
+            background: #243D83;
+
+        }
+    </style>
+
+
+</body>
+
+</html>
