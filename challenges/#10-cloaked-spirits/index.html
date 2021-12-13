@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloaked Spirits</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">
+            <div id="o-circle">
+                <div id="i-circle"></div>
+            </div>
+        </div>
+        <div id="center">
+            <div id="co-circle">
+                <div id="ci-circle"></div>
+            </div>
+        </div>
+        <div id="right">
+            <div id="o-circle">
+                <div id="i-circle"></div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            background: #62306D;
+            margin: 0;
+        }
+
+        .container {
+            height: 250px;
+            width: 300px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        #left,
+        #right {
+            height: 100px;
+            width: 100px;
+            background: #F7EC7D;
+            position: relative;
+        }
+
+        #center {
+            height: 200px;
+            width: 100px;
+            background: #F7EC7D;
+        }
+
+        #o-circle,
+        #co-circle {
+            background: #AA445F;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px
+        }
+
+        #i-circle,
+        #ci-circle {
+            background: #E38F66;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        #co-circle {
+            top: 50px;
+            background: #E38F66;
+        }
+
+        #ci-circle {
+            background: #AA445F;
+
+        }
+    </style>
+</body>
+
+</html>
