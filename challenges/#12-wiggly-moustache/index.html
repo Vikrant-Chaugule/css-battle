@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiggly Moustach</title>
+</head>
+
+<body>
+    <div id="left">
+        <div class="round left-round"></div>
+    </div>
+    <div id="center"></div>
+    <div id="right">
+        <div class="round right-round"></div>
+    </div>
+    <style>
+        body {
+            background: #F5D6B4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+
+        #left,
+        #center,
+        #right {
+            height: 30px;
+            width: 60px;
+            border: 20px solid #D86F45
+        }
+
+        #left,
+        #right {
+            position: relative;
+            top: 25px;
+            border-top: 0px;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+
+        #left {
+            left: 20px;
+        }
+
+        #right {
+            right: 20px;
+        }
+
+        #center {
+            position: relative;
+            bottom: 25px;
+            border-bottom: 0px;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+
+        .round {
+            height: 20px;
+            position: absolute;
+            width: 20px;
+            border-radius: 50%;
+            background: #D86F45;
+        }
+
+        .left-round {
+            bottom: 20px;
+            left: -20px
+        }
+
+        .right-round {
+            bottom: 20px;
+            right: -20px;
+        }
+    </style>
+</body>
+
+</html>
