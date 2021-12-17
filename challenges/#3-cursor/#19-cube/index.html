@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+</head>
+
+<body bgcolor="#0B2429">
+    <div class="container">
+
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            height: 400px;
+            width: 400px;
+        }
+
+        .box {
+            position: absolute;
+            top: 80px;
+            width: 70px;
+            height: 70px;
+        }
+
+        .b1 {
+            left: 130px;
+            background: #998235;
+            transform: skew(0deg, -45deg)
+        }
+
+        .b2 {
+            right: 130px;
+            background: #1A4341;
+            transform: skew(0deg, 45deg)
+        }
+
+        .b3 {
+            top: 135px;
+            right: 150px;
+            width: 100px;
+            height: 100px;
+            background: #F3AC3C;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</body>
+
+</html>
