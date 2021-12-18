@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+</head>
+
+<body>
+    <div id="b1">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="small-circle c3"></div>
+        <div class="small-circle c4"></div>
+    </div>
+
+    <div id="b2">
+        <div class="circle c5"></div>
+        <div class="circle c6"></div>
+    </div>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #62306D;
+            padding: 100px;
+        }
+
+        #b1 {
+            width: 140px;
+            height: 100px;
+            background: #F7EC7D;
+            position: relative;
+        }
+
+        #b2 {
+            width: 60px;
+            height: 100px;
+            background: #E38F66;
+            position: relative;
+
+        }
+
+        .circle {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #62306D;
+            border-radius: 50%;
+        }
+
+        .c1 {
+            top: -20px;
+            left: -20px
+        }
+
+        .c2 {
+            bottom: -20px;
+            left: -20px
+        }
+
+        .small-circle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #62306D;
+            border-radius: 50%;
+            z-index: 1
+        }
+
+        .c3 {
+            right: -10px;
+            top: -10px;
+        }
+
+        .c4 {
+            right: -10px;
+            bottom: -10px;
+        }
+
+        .c5 {
+            top: -20px;
+            right: -20px
+        }
+
+        .c6 {
+            bottom: -20px;
+            right: -20px
+        }
+    </style>
+
+</body>
+
+</html>
